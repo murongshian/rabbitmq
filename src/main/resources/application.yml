@@ -1,0 +1,12 @@
+#rabbitmq
+spring:
+  rabbitmq:
+    host: your host
+    port: 5672
+    username: your username
+    password: your password
+    virtual-host: /
+    publisher-confirm-type: correlated
+    listener:
+      simple:
+        acknowledge-mode: manual
